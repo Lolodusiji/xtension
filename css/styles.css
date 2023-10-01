@@ -83,6 +83,48 @@ span{
     padding: 12px 12px 12px 16px;
 }
 
+.right{
+    /* width:100%; */
+    /* height: 100vh; */
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+background-color: #eee;
+width: 45px;
+height: 25px;
+border-radius: 200px;
+cursor: pointer;
+position: relative;
+transition: 0.2s;
+}
+
+.button::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width:17px;
+    height: 17px;
+    border-radius: 200px;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+input:checked + .button{
+    background-color: #100A42;
+}
+
+input:checked + .button::before{
+    transform: translateX(17px);
+}
+
+input{
+    display: none;
+}
+
 .left{
     display: flex;
     align-items: center;

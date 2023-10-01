@@ -1,34 +1,28 @@
 {
     "manifest_version": 3,
     "name": "HelpMeOut",
-    "description": "It records the user's screen",
+    "description": "Records the user's screen",
+    "version": "1.0.0",
     "icons": {
-        "128": "/images/small.svg"
+      "128": "/images/small.svg"
     },
-
     "background": {
-        "service_worker": "background.js"
+      "service_worker": "background.js"
     },
-
     "action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "16": "/images/small.svg",
-            "32": "/images/small.svg",
-            "128": "/images/small.svg"
-        }
-
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/images/small.svg"
+      }
     },
-
     "host_permissions": [
-        "http://*/",
-        "https://*/*"
+      "http://*/",
+      "https://*/*"
     ],
-
     "permissions": [
-        "scripting",
-        "tabs",
-        "activeTab"
-    ],
-    "version": "1.0.0"
-}
+      "scripting",
+      "tabs",
+      "activeTab"
+    ]
+  }
+  
